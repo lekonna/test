@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 mkdir _test
 cd _test
 cmake ../
@@ -10,7 +11,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 echo "CMAKE passed"
-make 
+make
 if [ $? -ne 0 ]; then
     echo "BUILD failed"
     cd ..
